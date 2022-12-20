@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.citrusframework.org/samples/my-testcase-info">
+    <xs:element name="bookstore">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="book" type="xs:string">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title" type="xs:int" xml:lang="en"/>
+                            <xs:element name="price" type="xs:double"/>
+                            <xs:element name="date" type="xs:date"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

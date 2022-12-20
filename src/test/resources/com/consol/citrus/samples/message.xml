@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+  <book>
+    <title lang="en">Harry Potter</title>
+    <price>29.99</price>
+    <date>16.12.22</date>
+  </book>
+  <book>
+    <title lang="en">Learning XML</title>
+    <price>39.95</price>
+    <date>15.12.22</date>
+  </book>
+  <book>
+    <title lang="fr">Notre-Dame de Paris</title>
+    <price>40.00</price>
+    <date>16.12.22</date>
+  </book>
+
+</bookstore>
