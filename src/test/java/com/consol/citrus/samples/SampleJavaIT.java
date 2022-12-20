@@ -14,12 +14,9 @@ public class SampleJavaIT extends TestNGCitrusTestDesigner {
     @CitrusTest(name = "SendMessageTest")
     public void sendMessageTest() { //готово
 
-        description("Basic send message example");
-
         variable("text", "Hello Citrus!");
         variable("messageId", "Mx1x123456789");
-
-        send("helloServiceEndpoint")
+        send("endpoint")
                 .name("helloMessage")
                 .payload(new ClassPathResource("com/consol/citrus/samples/message.xml"))
                 .header("Operation", "sayHello")
@@ -29,12 +26,9 @@ public class SampleJavaIT extends TestNGCitrusTestDesigner {
     @CitrusTest(name = "SampleJavaTest.receiveMessageTest")
     public void receiveMessageTest() {
 
-
-        receive("helloServiceEndpoint")
+        receive("endpoint")
                 .validate("bookstore//book[last()]/date", "17.12.22")
                 .validate("/bookstore/book/title[@lang='fr']","Notre-Dame de Paris" );
                 //.xsd("testSchema");
-
-
     }
 }

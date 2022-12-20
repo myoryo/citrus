@@ -27,7 +27,7 @@
     </citrus:global-variables>
 
 
-    <citrus-jms:endpoint id="helloServiceEndpoint"
+    <citrus-jms:endpoint id="endpoint"
                          destination-name="queue1"/>
 
 
